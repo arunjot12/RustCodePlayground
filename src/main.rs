@@ -1,5 +1,5 @@
 pub mod swap_two_numbers;
-use std::{io, process::exit};
+use std::io;
 use crate::swap_two_numbers::swap_numbers_using_input;
 fn main() {
     swap_numbers_using_input();

@@ -1,4 +1,4 @@
-use std::{io, process::exit};
+use std::{io,sync::RwLock };
 use lazy_static::lazy_static;
 
 #[allow(dead_code)]
@@ -13,15 +13,14 @@ pub fn swap_numbers() {
     println!("number_one {},number_two {}", number_one, number_second);
 }
 
+lazy_static! {
+    static ref FIRST_NUMBER: RwLock<u32> = RwLock::new(0);
+    static ref SECOND_NUMBER: RwLock<u32> = RwLock::new(0);
+}
+
 /// Swap using the user input
 pub fn swap_numbers_using_input() {
     println!("Please choose if you want to input or want to Show the existing numbers ");
-
-    lazy_static! {
-        static ref FIRST_NUMBER: u32 = 0;
-        static ref SECOND_NUMBER: u32 = 0;
-    }
-    
 
     loop {
         let mut command = String::new();
@@ -41,10 +40,9 @@ pub fn swap_numbers_using_input() {
         }
     }
 
-
     fn show() {
-        println!("First number: {}", *FIRST_NUMBER);
-        println!("Second number: {}", *SECOND_NUMBER);
+        println!("First number: {:?}", *FIRST_NUMBER);
+        println!("Second number: {:?}", *SECOND_NUMBER);
     }
 
     fn input() {
@@ -52,23 +50,16 @@ pub fn swap_numbers_using_input() {
 
         let mut input_one = String::new();
         io::stdin().read_line(&mut input_one).expect("Failed to read line");
-        let mut ref_first :u32 = *FIRST_NUMBER;
-        ref_first = input_one.trim().parse().expect("Please type a number!");
+        let first_number: u32 = input_one.trim().parse().expect("Please type a number!");
 
         println!("Please inter the second number");
         let mut second_one = String::new();
         io::stdin().read_line(&mut second_one).expect("Failed to read line");
-        let mut ref_second:u32 = *SECOND_NUMBER;
-        ref_second = second_one
-            .trim()
-            .parse()
-            .expect("Please type a number in second integer!");
+        let second_number: u32 = second_one.trim().parse().expect("Please type a number in second integer!");
 
-        let swap_second_number = ref_first;
-        ref_first = ref_second;
-        ref_second = swap_second_number;
+        *FIRST_NUMBER.write().unwrap() = second_number;
+        *SECOND_NUMBER.write().unwrap() = first_number;
 
         println!("thank you for storing the numbers");
-        
     }
 }
