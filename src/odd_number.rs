@@ -6,14 +6,17 @@ pub fn odd_number(){
     io::stdin().read_line(&mut input).unwrap();
     let number :u32 = input.trim().parse().expect("Please type a number!");
 
-    for mut i in 0..number{
-        if ! i%2 == 0 {
-            println!("the number is {}",i);
-           i+=1;
-        }
+    // for mut i in 0..number{
+    //     if ! i%2 == 0 {
+    //         println!("the number is {}",i);
+    //        i+=1;
+    //     }
 
+    // }
 
+    // We can also use the step by function of the rust
+    for i in (0..number).step_by(2) {
+        println!("the number is {}", i + 1);
     }
-
 
 }
