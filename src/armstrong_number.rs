@@ -19,3 +19,22 @@ pub fn armstrong_number() {
         print!("not a armstrong number");
     }
  }
+
+// Arm strong through its length
+//  fn main() {
+//     for num in 1..=1000 {
+//         if is_armstrong(num) {
+//             println!("{}", num);
+//         }
+//     }
+// }
+
+// fn is_armstrong(num: u32) -> bool {
+//     let num_str = num.to_string();
+//     let num_digits = num_str.len() as u32;
+//     let sum_of_powers: u32 = num_str
+//         .chars()
+//         .map(|c| c.to_digit(10).unwrap().pow(num_digits))
+//         .sum();
+//     sum_of_powers == num
+// }
