@@ -1,10 +1,15 @@
 pub mod swap_two_numbers;
+use crate::armstrong_number::armstrong_number;
+pub mod armstrong_number;
 // use std::io;
 // use crate::swap_two_numbers::swap_numbers_using_input;
 pub mod odd_number;
 use crate::odd_number::odd_number;
 fn main() {
-    odd_number();
+    // odd_number();
+    armstrong_number();
+
+
     // Swap Numbers
     // swap_numbers_using_input();
     // loop {
