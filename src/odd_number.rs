@@ -8,9 +8,9 @@ pub fn odd_number() {
 
     for mut i in 0..number {
         if !i % 2 == 0 {
-            println!("the number is first {}",i);
-               let number =  i + 1;
-               println!("the number is {}",number);
+            println!("the number is first {}", i);
+            let number = i + 1;
+            println!("the number is {}", number);
         }
     }
 
