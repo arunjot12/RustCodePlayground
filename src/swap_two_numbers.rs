@@ -18,6 +18,16 @@ lazy_static! {
     static ref SECOND_NUMBER: RwLock<u32> = RwLock::new(0);
 }
 
+// Swap without using the third variable
+
+pub fn swap(){
+    let mut  first_number = 1;
+    let mut second_number = 5;
+    first_number = first_number + second_number;
+    second_number = first_number - second_number;
+    first_number = first_number - second_number;
+}
+
 /// Swap using the user input
 pub fn swap_numbers_using_input() {
     println!("Please choose if you want to input or want to Show the existing numbers ");
