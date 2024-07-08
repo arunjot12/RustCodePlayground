@@ -1,10 +1,11 @@
 // Declare modules
 // pub mod swap_two_numbers;
 // pub mod armstrong_number;
-pub mod prime_number;
+// pub mod prime_number;
 // pub mod odd_number;
 // pub mod fibonacci;
 // pub mod factorial_number;
+pub mod reverse_number;
 
 // Import necessary functions
 // use crate::armstrong_number::armstrong_number;
@@ -12,7 +13,8 @@ pub mod prime_number;
 // use crate::odd_number::odd_number;
 // use crate::fibonacci::fibonacci;
 // use crate::factorial_number::factorial;
-use crate::prime_number::prime;
+// use crate::prime_number::prime;
+use crate::reverse_number::reverse;
 
 // use std::io;
 
@@ -22,7 +24,8 @@ fn main() {
     // fibonacci();
     // armstrong_number();
     // factorial();
-    prime();
+    // prime();
+    reverse();
 
     // Loop to repeatedly swap numbers based on user input
     // loop {
