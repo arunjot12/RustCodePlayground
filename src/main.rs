@@ -1,13 +1,5 @@
 // Declare modules
-// pub mod swap_two_numbers;
-// pub mod armstrong_number;
-// pub mod prime_number;
-// pub mod odd_number;
-// pub mod fibonacci;
-// pub mod factorial_number;
-// pub mod reverse_number;
-pub mod palindrome_number;
-
+pub mod basic;
 // Import necessary functions
 // use crate::armstrong_number::armstrong_number;
 // use crate::swap_two_numbers::swap_numbers_using_input;
@@ -16,7 +8,7 @@ pub mod palindrome_number;
 // use crate::factorial_number::factorial;
 // use crate::prime_number::prime;
 // use crate::reverse_number::reverse;
-use crate::palindrome_number::palindrome;
+use crate::basic::palindrome_number::palindrome;
 // use std::io;
 
 fn main() {
