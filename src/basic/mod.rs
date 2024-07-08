@@ -6,3 +6,4 @@ pub mod odd_number;
 pub mod fibonacci;
 pub mod factorial_number;
 pub mod reverse_number;
+pub mod largest_number;

@@ -7,8 +7,9 @@ pub mod basic;
 // use crate::fibonacci::fibonacci;
 // use crate::factorial_number::factorial;
 // use crate::prime_number::prime;
+use crate::basic::largest_number::largest_number;
 // use crate::reverse_number::reverse;
-use crate::basic::palindrome_number::palindrome;
+// use crate::basic::palindrome_number::palindrome;
 // use std::io;
 
 fn main() {
@@ -19,7 +20,7 @@ fn main() {
     // factorial();
     // prime();
     // reverse();
-    palindrome()
+    largest_number()
 
     // Loop to repeatedly swap numbers based on user input
     // loop {
