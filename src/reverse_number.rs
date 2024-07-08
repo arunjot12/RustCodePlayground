@@ -1,8 +1,9 @@
 pub fn reverse(){
+    println!("Please enter the number");
     let mut number = String::new();
     std::io::stdin() .read_line(&mut number).expect("Failed to read line");
     let mut number: u32 =  number.trim().parse().expect("REASON");
-    
+
     let mut vec2= Vec::new();
    while number != 0 {
     let n = number%10;

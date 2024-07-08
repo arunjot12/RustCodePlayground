@@ -5,7 +5,8 @@
 // pub mod odd_number;
 // pub mod fibonacci;
 // pub mod factorial_number;
-pub mod reverse_number;
+// pub mod reverse_number;
+pub mod palindrome_number;
 
 // Import necessary functions
 // use crate::armstrong_number::armstrong_number;
@@ -14,18 +15,19 @@ pub mod reverse_number;
 // use crate::fibonacci::fibonacci;
 // use crate::factorial_number::factorial;
 // use crate::prime_number::prime;
-use crate::reverse_number::reverse;
-
+// use crate::reverse_number::reverse;
+use crate::palindrome_number::palindrome;
 // use std::io;
 
 fn main() {
-    // Call various number-related functions
+    // Basic programs number-related functions
     // odd_number();
     // fibonacci();
     // armstrong_number();
     // factorial();
     // prime();
-    reverse();
+    // reverse();
+    palindrome()
 
     // Loop to repeatedly swap numbers based on user input
     // loop {
