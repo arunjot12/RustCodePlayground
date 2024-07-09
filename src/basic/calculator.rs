@@ -14,7 +14,7 @@ pub fn calculate() {
 
     let mut input = String::new();
     io::stdin().read_line(&mut input).unwrap();
-    let input:String = input.to_lowercase().parse().expect("not a number");
+    let input:String = input.to_lowercase().trim().parse().expect("not a number");
     
     match input.as_ref() {
         "addition" => addition(number),
