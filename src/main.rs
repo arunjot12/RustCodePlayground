@@ -1,16 +1,10 @@
 // Declare modules
 pub mod basic;
-use crate::basic::calculator::calculate;
+pub mod patterns;
+use crate::patterns::simple_pyramid::simple_pyramid;
 
-fn main() {
-    // Basic programs number-related functions
-    // odd_number();
-    // fibonacci();
-    // armstrong_number();
-    // factorial();
-    // prime();
-    // reverse();
-    calculate()
+fn main() { 
+    simple_pyramid()
 
     // Loop to repeatedly swap numbers based on user input
     // loop {

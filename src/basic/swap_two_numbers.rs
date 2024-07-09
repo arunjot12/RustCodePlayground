@@ -26,6 +26,7 @@ pub fn swap(){
     first_number = first_number + second_number;
     second_number = first_number - second_number;
     first_number = first_number - second_number;
+    println!("{}",first_number);
 }
 
 /// Swap using the user input
