@@ -11,12 +11,16 @@ pub fn calculate() {
     println!("Substraction");
     println!("Multiplication");
     println!("Division");
+
+    let mut input = String::new();
+    io::stdin().read_line(&mut input).unwrap();
+    let input:String = input.to_lowercase().parse().expect("not a number");
     
-    match "" {
-        "Addition" => addition(number),
-        "Substraction" => substraction(number),
-        "Multiplication" => multiplication(number),
-        "Division" => division(number),
+    match input.as_ref() {
+        "addition" => addition(number),
+        "substraction" => substraction(number),
+        "multiplication" => multiplication(number),
+        "division" => division(number),
         _ => println!("Thank you"),
     }
 
