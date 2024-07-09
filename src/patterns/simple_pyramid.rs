@@ -7,3 +7,13 @@ pub fn simple_pyramid() {
         println!("");
     }
 }
+
+// Reverse Pyramid
+pub fn reverse_pyramid() {
+    for i in (1..=5).rev() {
+        for _j in 1..=i {
+            print!("{}", _j);
+        }
+        println!("");
+    }
+}
