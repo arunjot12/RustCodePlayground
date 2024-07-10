@@ -1,10 +1,10 @@
 // Declare modules
 pub mod basic;
 pub mod patterns;
-use crate::patterns::full_pyramid::pyramid;
+use crate::patterns::pyramid_numbers::pyramid_numbers;
 
 fn main() { 
-    pyramid()
+    pyramid_numbers()
 
     // Loop to repeatedly swap numbers based on user input
     // loop {

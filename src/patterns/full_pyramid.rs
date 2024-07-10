@@ -15,7 +15,7 @@ pub fn full_pyramid() {
     }
 }
 
-pub fn pyramid() {
+pub fn reverse_pyramid() {
   for i in (1..5) {
         for _ in 1..=(5 - i) {
             print!(" ");
