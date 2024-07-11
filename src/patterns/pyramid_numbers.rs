@@ -11,5 +11,4 @@ pub fn pyramid_numbers(){
         }
         println!()
     }
-
 }
