@@ -1,10 +1,10 @@
 // Declare modules
 pub mod basic;
 pub mod patterns;
-use crate::patterns::hollow_pyramid::hollow;
+use crate::patterns::square_pyramid::square_pyramid;
 
 fn main() { 
-    hollow()
+    square_pyramid()
 
     // Loop to repeatedly swap numbers based on user input
     // loop {
