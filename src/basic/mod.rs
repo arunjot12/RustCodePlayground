@@ -9,3 +9,4 @@ pub mod reverse_number;
 pub mod largest_number;
 pub mod calculator;
 pub mod leap_year;
+pub mod multiplication_table;
