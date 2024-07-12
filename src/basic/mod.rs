@@ -8,3 +8,4 @@ pub mod factorial_number;
 pub mod reverse_number;
 pub mod largest_number;
 pub mod calculator;
+pub mod leap_year;

@@ -1,10 +1,10 @@
 // Declare modules
 pub mod basic;
 pub mod patterns;
-use patterns::hollow_diamond_pyramid::hollow_diamond;
+use basic::leap_year::leap_year;
 
 fn main() { 
-    hollow_diamond()
+    leap_year()
 
     // Loop to repeatedly swap numbers based on user input
     // loop {
