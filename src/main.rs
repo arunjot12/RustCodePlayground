@@ -2,13 +2,13 @@
 pub mod basic;
 pub mod patterns;
 pub mod arrays;
-use arrays::three_d_arrays::three_d_arrays;
+use arrays::largest_array::largest_number_array;
 
 // use basic::lcm::lcm;
 
 fn main() { 
     // lcm()
-    three_d_arrays();
+    largest_number_array();
 
     // Loop to repeatedly swap numbers based on user input
     // loop {

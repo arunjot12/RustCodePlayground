@@ -1,6 +1,5 @@
 pub fn three_d_arrays() {
-    let array: [[[i32; 3]; 3]; 2] = 
-    [
+    let array: [[[i32; 3]; 3]; 2] = [
         [
             [1, 2, 3],
             [4, 5, 6],
@@ -12,13 +11,13 @@ pub fn three_d_arrays() {
             [15, 16, 17],
         ],
     ];
-    for first in array{
-        for second in first{
-            for third in second{
-                print!("{} ",third)
+    for first in array {
+        for second in first {
+            for third in second {
+                print!("{} ", third);
             }
-            println!()
+            println!();
         }
-        println!()
+        println!();
     }
 }

@@ -44,3 +44,5 @@ pub fn prime(){
         }
      }
 }
+
+// Another approch
