@@ -1,10 +1,14 @@
 // Declare modules
 pub mod basic;
 pub mod patterns;
-use basic::leap_year::leap_year;
+pub mod arrays;
+use arrays::three_d_arrays::three_d_arrays;
+
+// use basic::lcm::lcm;
 
 fn main() { 
-    leap_year()
+    // lcm()
+    three_d_arrays();
 
     // Loop to repeatedly swap numbers based on user input
     // loop {
