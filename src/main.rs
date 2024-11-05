@@ -4,11 +4,9 @@ pub mod patterns;
 pub mod arrays;
 use arrays::zombie_array::create_zombie;
 
-// use basic::lcm::lcm;
-
 fn main() { 
     // lcm()
-    create_zombie();
+    unsafe { create_zombie() };
 
     // Loop to repeatedly swap numbers based on user input
     // loop {
