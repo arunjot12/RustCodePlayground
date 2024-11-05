@@ -2,13 +2,13 @@
 pub mod basic;
 pub mod patterns;
 pub mod arrays;
-use arrays::search_array::search_array;
+use arrays::zombie_array::create_zombie;
 
 // use basic::lcm::lcm;
 
 fn main() { 
     // lcm()
-    search_array();
+    create_zombie();
 
     // Loop to repeatedly swap numbers based on user input
     // loop {

@@ -10,4 +10,4 @@ pub mod largest_number;
 pub mod calculator;
 pub mod leap_year;
 pub mod multiplication_table;
-pub mod lcm;
+// pub mod lcm;
