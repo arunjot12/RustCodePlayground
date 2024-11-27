@@ -4,3 +4,4 @@ pub mod largest_array;
 pub mod max_min_array;
 pub mod search_array;
 pub mod zombie_array;
+pub mod sum_array;

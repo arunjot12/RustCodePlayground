@@ -2,12 +2,13 @@
 pub mod basic;
 pub mod patterns;
 pub mod arrays;
-use arrays::zombie_array::create_zombie;
+use arrays::sum_array::sum_of_array;
+// use arrays::zombie_array::create_zombie;
 
 fn main() { 
     // lcm()
-    unsafe { create_zombie() };
-
+    // unsafe { create_zombie() };
+    sum_of_array();
     // Loop to repeatedly swap numbers based on user input
     // loop {
     //     swap_numbers_using_input();
