@@ -1,7 +1,8 @@
-use std::{array, vec};
+use std::vec;
 use ethabi::Token;
 use tiny_keccak::{ Hasher, Keccak };
 
+#[allow(dead_code)]
 struct Zombie {
     name: String,
     dna: String,
