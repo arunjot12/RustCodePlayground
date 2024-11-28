@@ -13,8 +13,10 @@ pub fn two_sum() {
     let nums = [1, 2, 3, 4, 5];
     let target = 9;
     for i in nums {
-        if nums[i] + nums[i + 1] == target  {
+        for j in (i+1)..nums.len(){
+        if nums[i] + nums[j] == target  {
             println!("first {} second {}", nums[i], nums[i + 1]);
         }
+    }
     }
 }
