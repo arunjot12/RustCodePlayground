@@ -37,4 +37,20 @@ pub fn two_sum() {
     println!("No pair found that sums to the target");
 }
 
+// Print the sum of the vec
+pub fn two_vec_sum(){
+    let data:Vec<i32> = vec![14,15,6];
+    let target :i32 = 21;
+    let mut output: Vec<(i32)> = Vec::new();
+    for i in 0..data.len(){
+        for j in i+1..data.len(){ 
+            if data[i] + data[j] == target{
+                println!("Found elements at indices {} and {} with values {} and {}", i, j, data[i], data[j]);
+                output.push((i).try_into().unwrap());
+                output.push((j).try_into().unwrap());
+            }
+        }
+    }
+    println!("output {:?}",output);
+}
 
