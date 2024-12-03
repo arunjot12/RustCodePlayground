@@ -2,13 +2,13 @@
 pub mod basic;
 pub mod patterns;
 pub mod arrays;
-use arrays::sum_array::two_sum;
+use arrays::largest_string_array::largest_string_array;
 // use arrays::zombie_array::create_zombie;
 
 fn main() { 
     // lcm()
     // unsafe { create_zombie() };
-    two_sum();
+    largest_string_array();
     // Loop to repeatedly swap numbers based on user input
     // loop {
     //     swap_numbers_using_input();
