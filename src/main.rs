@@ -2,11 +2,11 @@
 // pub mod basic;
 // pub mod patterns;
 pub mod basic;
-use basic::palindrome_number::palindrome_number;
+use basic::reverse_integer::reverse_integer;
 // use arrays::zombie_array::create_zombie;
 
 fn main() { 
-    palindrome_number();
+    reverse_integer();
 
     
     // lcm()

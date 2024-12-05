@@ -9,11 +9,13 @@ pub fn palindrome(){
         println!("not a palindrome")
     }
 }
+
+// Added the program without using inbuilt function
 pub fn palindrome_number(){
     let mut num = 121;
     let original_number = num;
     let mut reversed = 0;
-    while(num > 0) {
+    while num > 0 {
         let digit = num % 10;
         reversed = reversed * 10 + digit;
         num /= 10;
