@@ -1,12 +1,12 @@
 // Declare modules
 // pub mod basic;
 // pub mod patterns;
-pub mod arrays;
-use arrays::sum_array::two_vec_sum;
+pub mod basic;
+use basic::palindrome_number::palindrome_number;
 // use arrays::zombie_array::create_zombie;
 
 fn main() { 
-    two_vec_sum();
+    palindrome_number();
 
     
     // lcm()
