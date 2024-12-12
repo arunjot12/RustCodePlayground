@@ -3,7 +3,7 @@ pub fn removing_duplicasy(){
     let mut removed_data:Vec<i32> = vec![];
     for i in data{
         if removed_data.contains(&i){
-           data()
+           data();
         }
         else{
             removed_data.push(i);
