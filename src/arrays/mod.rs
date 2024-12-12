@@ -6,3 +6,4 @@ pub mod search_array;
 pub mod zombie_store_array;
 pub mod sum_array;
 pub mod largest_string_array;
+pub mod removing_duplicasy;

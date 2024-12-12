@@ -1,12 +1,12 @@
 // Declare modules
 // pub mod basic;
 // pub mod patterns;
-pub mod basic;
-use basic::reverse_integer::reverse_integer;
+pub mod arrays;
+use arrays::removing_duplicasy::removing_duplicasy;
 // use arrays::zombie_array::create_zombie;
 
 fn main() { 
-    reverse_integer();
+    removing_duplicasy();
 
     
     // lcm()
