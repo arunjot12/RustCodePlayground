@@ -1,4 +1,5 @@
-pub fn reverse_array() {
+// Reverse of the array without using in-built function
+pub fn reverse() {
     let mut arr = [1, 2, 3, 4, 5]; 
     let length = arr.len();
     
@@ -10,3 +11,12 @@ pub fn reverse_array() {
     
     println!("{:?}", arr);
  }
+
+ // Reverse array using in-built function
+pub fn reverse_array(){
+    let arr = [1,2,3,4,5];
+    // arr.reverse();
+    let rev: Vec<_> = arr.iter().rev().collect();
+    println!("{:?}",rev);
+
+} 
