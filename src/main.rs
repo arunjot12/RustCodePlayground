@@ -2,11 +2,11 @@
 // pub mod basic;
 // pub mod patterns;
 pub mod arrays;
-use arrays::removing_duplicasy::removing_duplicasy;
+use arrays::reverse_array::reverse_array;
 // use arrays::zombie_array::create_zombie;
 
 fn main() { 
-    removing_duplicasy();
+    reverse_array();
 
     
     // lcm()

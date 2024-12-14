@@ -41,7 +41,7 @@ pub fn two_sum() {
 pub fn two_vec_sum(){
     let data:Vec<i32> = vec![14,15,6];
     let target :i32 = 21;
-    let mut output: Vec<(i32)> = Vec::new();
+    let mut output: Vec<i32> = Vec::new();
     for i in 0..data.len(){
         for j in i+1..data.len(){ 
             if data[i] + data[j] == target{
