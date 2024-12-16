@@ -2,11 +2,11 @@
 // pub mod basic;
 // pub mod patterns;
 pub mod arrays;
-use arrays::reverse_array::reverse_array;
+use arrays::reverse_string::reverse_string;
 // use arrays::zombie_array::create_zombie;
 
 fn main() { 
-    reverse_array();
+    reverse_string();
 
     
     // lcm()

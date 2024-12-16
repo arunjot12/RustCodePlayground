@@ -8,3 +8,4 @@ pub mod sum_array;
 pub mod largest_string_array;
 pub mod reverse_array;
 pub mod removing_duplicasy;
+pub mod reverse_string;
