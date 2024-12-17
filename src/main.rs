@@ -1,12 +1,10 @@
 // Declare modules
-// pub mod basic;
-// pub mod patterns;
-pub mod arrays;
-use arrays::reverse_string::reverse_string;
+pub mod enums;
+use enums::rust_enum::rust_enum;
 // use arrays::zombie_array::create_zombie;
 
 fn main() { 
-    reverse_string();
+    rust_enum();
 
     
     // lcm()
