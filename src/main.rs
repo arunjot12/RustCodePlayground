@@ -1,10 +1,10 @@
 // Declare modules
-pub mod enums;
-use enums::rust_enum::rust_enum;
+pub mod rust_topics;
+// use enums::rust_enum::rust_enum;
 // use arrays::zombie_array::create_zombie;
 
 fn main() { 
-    rust_enum();
+    // rust_enum();
 
     
     // lcm()
