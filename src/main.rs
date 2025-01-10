@@ -1,11 +1,12 @@
 // Declare modules
 pub mod rust_topics;
+pub use rust_topics::threads::threads;
 // use enums::rust_enum::rust_enum;
 // use arrays::zombie_array::create_zombie;
 
 fn main() { 
     // rust_enum();
-
+    threads();
     
     // lcm()
     // unsafe { create_zombie() };
