@@ -1,3 +1,4 @@
+// Enums 
 
 pub fn rust_enum() {
     enum Office {
@@ -5,7 +6,6 @@ pub fn rust_enum() {
     }
     let employee_data = Office::Employee("Alice".to_string());
     match employee_data{
-        Office::Employee(employee) => print!("{}",employee),
-        _ => {}
+        Office::Employee(employee) => print!("{}",employee)
     }
 }
