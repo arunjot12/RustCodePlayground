@@ -12,3 +12,10 @@ keccak = "0.1.5"
 lazy_static = "1.4.0"
 rand = "0.8.5"
 tiny-keccak = "2.0.2"
+
+[features]
+rust_enum = []
+lcm = []
+zombie = []
+refernce = []
+swap_loop = []

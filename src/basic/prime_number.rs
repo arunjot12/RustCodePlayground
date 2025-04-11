@@ -1,4 +1,5 @@
 /// Check the number is prime or not
+/// 
 fn is_prime(n: i32) -> bool {
     if n <= 1 {
         return false; // Not prime

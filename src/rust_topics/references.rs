@@ -1,6 +1,6 @@
 // Online Rust compiler to run Rust program online
 // Print "Try programiz.pro" message
-
+#[cfg(feature = "refernce")]
 fn _refernce() {
     let mut arr = [1,-5,12,-98];
     _double_negative(&mut arr);

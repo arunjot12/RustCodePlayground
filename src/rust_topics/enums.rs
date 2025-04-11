@@ -1,5 +1,5 @@
 // Enums 
-
+#[cfg(feature = "rust_enum")]
 pub fn rust_enum() {
     enum Office {
         Employee(String),
