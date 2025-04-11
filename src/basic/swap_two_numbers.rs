@@ -1,6 +1,25 @@
 use std::{io,sync::RwLock };
 use lazy_static::lazy_static;
 
+
+// Main function input
+
+
+// #[cfg(feature = "swap_loop")]
+// swap_loop();
+// // Loop to repeatedly swap numbers based on user input
+// loop {
+//     swap_numbers_using_input();
+//     println!("Do you want to swap the numbers again? (yes/no)");
+//     let mut response = String::new();
+//     io::stdin().read_line(&mut response).unwrap();
+//     let response = response.trim().to_lowercase();
+
+//     if response != "yes" {
+//         break;
+//     }
+// }
+
 #[allow(dead_code)]
 /// A normal swap between the two variables
 pub fn swap_numbers() {
@@ -29,6 +48,7 @@ pub fn swap(){
     println!("{}",first_number);
 }
 
+#[cfg(feature = "swap_loop")]
 /// Swap using the user input
 pub fn swap_numbers_using_input() {
     println!("Please choose if you want to input or want to Show the existing numbers ");
