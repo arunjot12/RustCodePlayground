@@ -1,10 +1,8 @@
-use std::{io,sync::RwLock };
 use lazy_static::lazy_static;
-
+#[allow(unused)]
+use std::{io, sync::RwLock};
 
 // Main function input
-
-
 // #[cfg(feature = "swap_loop")]
 // swap_loop();
 // // Loop to repeatedly swap numbers based on user input
@@ -38,14 +36,13 @@ lazy_static! {
 }
 
 // Swap without using the third variable
-
-pub fn swap(){
-    let mut  first_number = 1;
+pub fn swap() {
+    let mut first_number = 1;
     let mut second_number = 5;
     first_number = first_number + second_number;
     second_number = first_number - second_number;
     first_number = first_number - second_number;
-    println!("{}",first_number);
+    println!("{}", first_number);
 }
 
 #[cfg(feature = "swap_loop")]
@@ -80,13 +77,20 @@ pub fn swap_numbers_using_input() {
         println!("Please inter the first number");
 
         let mut input_one = String::new();
-        io::stdin().read_line(&mut input_one).expect("Failed to read line");
+        io::stdin()
+            .read_line(&mut input_one)
+            .expect("Failed to read line");
         let first_number: u32 = input_one.trim().parse().expect("Please type a number!");
 
         println!("Please inter the second number");
         let mut second_one = String::new();
-        io::stdin().read_line(&mut second_one).expect("Failed to read line");
-        let second_number: u32 = second_one.trim().parse().expect("Please type a number in second integer!");
+        io::stdin()
+            .read_line(&mut second_one)
+            .expect("Failed to read line");
+        let second_number: u32 = second_one
+            .trim()
+            .parse()
+            .expect("Please type a number in second integer!");
 
         *FIRST_NUMBER.write().unwrap() = second_number;
         *SECOND_NUMBER.write().unwrap() = first_number;

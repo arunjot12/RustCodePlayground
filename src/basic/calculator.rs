@@ -14,8 +14,8 @@ pub fn calculate() {
 
     let mut input = String::new();
     io::stdin().read_line(&mut input).unwrap();
-    let input:u32 = input.trim().parse().expect("not a number");
-    
+    let input: u32 = input.trim().parse().expect("not a number");
+
     match input {
         1 => addition(number),
         2 => substraction(number),
@@ -24,29 +24,29 @@ pub fn calculate() {
         _ => println!("Thank you"),
     }
 
-    fn addition(number:u32) {
+    fn addition(number: u32) {
         let first_number = number;
-        let second_number =  input_number();
-        let total =  first_number + second_number;
-        println!("total number is {}",total);
+        let second_number = input_number();
+        let total = first_number + second_number;
+        println!("total number is {}", total);
     }
-    fn substraction(number:u32) {
+    fn substraction(number: u32) {
         let first_number = number;
-        let second_number =  input_number();
-        let total =  first_number + second_number;
-        println!("total number is {}",total);
+        let second_number = input_number();
+        let total = first_number + second_number;
+        println!("total number is {}", total);
     }
-    fn multiplication(number:u32) {
+    fn multiplication(number: u32) {
         let first_number = number;
-        let second_number =  input_number();
-        let total =  first_number + second_number;
-        println!("total number is {}",total);
+        let second_number = input_number();
+        let total = first_number + second_number;
+        println!("total number is {}", total);
     }
-    fn division(number:u32) {
+    fn division(number: u32) {
         let first_number = number;
-        let second_number =  input_number();
-        let total =  first_number + second_number;
-        println!("total number is {}",total);
+        let second_number = input_number();
+        let total = first_number + second_number;
+        println!("total number is {}", total);
     }
 
     fn input_number() -> u32 {

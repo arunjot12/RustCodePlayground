@@ -16,6 +16,7 @@ tiny-keccak = "2.0.2"
 [features]
 rust_enum = []
 lcm = []
+reference = []
 zombie = []
 refernce = []
 swap_loop = []

@@ -1,10 +1,10 @@
 // Declare modules
-pub mod rust_topics;
 pub mod basic;
+pub mod rust_topics;
+use crate::references::reference;
 pub use rust_topics::*;
 
-fn main() { 
-
-    #[cfg(feature = "rust_enum")]
-    rust_enum();
+fn main() {
+    #[cfg(feature = "reference")]
+    reference();
 }

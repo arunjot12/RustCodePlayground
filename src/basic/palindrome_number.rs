@@ -1,17 +1,22 @@
- // Palindrome program with using in built functions
-pub fn palindrome(){
+// Palindrome program with using in built functions
+pub fn palindrome() {
     let number = 122;
-    let rev :u32= number.to_string().chars().rev() .collect::<String>().parse().expect("not a number");
-    if rev == number{
+    let rev: u32 = number
+        .to_string()
+        .chars()
+        .rev()
+        .collect::<String>()
+        .parse()
+        .expect("not a number");
+    if rev == number {
         println!("is a palindrome");
-    }
-    else{
+    } else {
         println!("not a palindrome")
     }
 }
 
 // Added the program without using inbuilt function
-pub fn palindrome_number(){
+pub fn palindrome_number() {
     let mut num = 121;
     let original_number = num;
     let mut reversed = 0;
@@ -19,13 +24,10 @@ pub fn palindrome_number(){
         let digit = num % 10;
         reversed = reversed * 10 + digit;
         num /= 10;
-        
     }
-    if original_number == reversed{
+    if original_number == reversed {
         println!("Hence number is palindrome");
-    }
-    else{
+    } else {
         println!("Not")
     }
-
 }
