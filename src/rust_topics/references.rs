@@ -20,4 +20,7 @@ pub fn reference() {
     let mut x = 10;
     let y = &mut x;
     println!("{}", y);
+    *y +=5;
+    println!("{}",x);
 }
+
