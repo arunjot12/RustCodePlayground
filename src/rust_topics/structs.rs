@@ -13,13 +13,17 @@ fn show_data() {
 }
 
 // Another example 
-
+#[allow(unused)]
 const MAXIMUM_POWER :u16 = 1000;
+
+#[allow(unused)]
 enum VehicleKind{
     Car,
     Bike,
     Truck
 }
+
+#[allow(unused)]
 
 struct VehicleData {
     kind: VehicleKind,
@@ -28,6 +32,8 @@ struct VehicleData {
     power:u16
 }
 
+
+#[allow(unused)]
 fn vehicle(){
 let vehicle = VehicleData {
     kind: VehicleKind::Car,
