@@ -10,3 +10,15 @@ fn _option() {
         }
     }
 }
+
+// Option using unwrap()
+
+pub fn option_unwrap(){
+    let data :Option<u32> = None;
+    println!("{:?}",data);
+
+    match data {
+        Some(value) => println!("{}",value),
+        None => {}
+    }
+}

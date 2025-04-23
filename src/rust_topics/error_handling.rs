@@ -3,7 +3,6 @@
 use std::fmt::format;
 
 fn divide(numerator:u32,denominator:u32) -> Result<u32,String>{
-
     if denominator == 0 {
         Err(format!("Number is zero"))
     }

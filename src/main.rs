@@ -1,10 +1,11 @@
 // Declare modules
 pub mod basic;
 pub mod rust_topics;
-use crate::generics::use_of_generic;
+#[allow(unused)]
+use crate::option::option_unwrap;
 pub use rust_topics::*;
 
 fn main() {
-    #[cfg(feature = "generics")]
-    use_of_generic();
+    #[cfg(feature = "option")]
+    option_unwrap();
 }
