@@ -33,6 +33,7 @@ pub fn use_of_generic() {
 // -------------------------------------
 
 /// A generic struct with two type parameters.
+#[allow(unused)]
 struct S<T1, T2> {
     c: char,
     n1: T1,
@@ -44,6 +45,7 @@ struct S<T1, T2> {
 // let _s = S::<u16, f32> { c: 'a', n1: 34, n2: 782, n3: 0.02 };
 
 /// A tuple struct version using generics.
+#[allow(unused)]
 struct SE<T1, T2>(char, T1, T1, T2);
 
 // Usage Example:

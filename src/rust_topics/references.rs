@@ -21,7 +21,7 @@ fn reference_array_example() {
 }
 
 /// Doubles each negative number in the array via a mutable reference.
-fn double_negative(a: &mut [i16; 4]) {
+fn _double_negative(a: &mut [i16; 4]) {
     for i in a {
         if *i < 0 {
             *i *= 2;

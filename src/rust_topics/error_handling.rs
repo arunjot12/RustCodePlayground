@@ -15,7 +15,7 @@ It has two variants:
 
 /// Divides `numerator` by `denominator`.
 /// Returns `Ok(result)` if valid, otherwise returns an `Err` with an error message.
-fn divide(numerator: u32, denominator: u32) -> Result<u32, String> {
+fn _divide(numerator: u32, denominator: u32) -> Result<u32, String> {
     if denominator == 0 {
         Err(format!("Number is zero"))
     } else {
@@ -25,8 +25,8 @@ fn divide(numerator: u32, denominator: u32) -> Result<u32, String> {
 
 /// Uses the `divide` function and matches the result.
 /// Prints the result or error message accordingly.
-fn show_divide(num: u32, den: u32) {
-    match divide(num, den) {
+fn _show_divide(num: u32, den: u32) {
+    match _divide(num, den) {
         Ok(value) => println!("{}/{} = {}", num, den, value),
         Err(msg)  => println!("Cannot divide {} by {}: {}", num, den, msg),
     }
