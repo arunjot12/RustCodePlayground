@@ -6,3 +6,4 @@ pub mod option;
 pub mod references;
 pub mod structs;
 pub mod error_handling;
+pub mod statics;
