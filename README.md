@@ -1,4 +1,4 @@
-# Rust Programs
+# Rust Code Playground
 
 A collection of Rust programs demonstrating various concepts and features of the Rust programming language. This repository is ideal for learners and enthusiasts looking to explore Rust through hands-on examples.
 
