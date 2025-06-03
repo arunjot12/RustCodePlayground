@@ -3,7 +3,7 @@
 // =====================================
 
 /*
-Generics allow for writing flexible and reusable code. 
+Generics allow for writing flexible and reusable code.
 They enable functions, structs, enums, and traits to work with any data type.
 */
 
@@ -23,8 +23,8 @@ fn generic<T>(a: char, b: T, c: T) -> T {
 
 /// Demonstrating the use of the generic function with different types.
 pub fn use_of_generic() {
-    let a = generic::<f64>('a', 5.5, 1.2);  // Uses f64
-    let b = generic::<i32>('a', 5, 1);      // Uses i32
+    let a = generic::<f64>('a', 5.5, 1.2); // Uses f64
+    let b = generic::<i32>('a', 5, 1); // Uses i32
     println!("{}, {}", a, b);
 }
 

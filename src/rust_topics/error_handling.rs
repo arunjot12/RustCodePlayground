@@ -28,6 +28,6 @@ fn _divide(numerator: u32, denominator: u32) -> Result<u32, String> {
 fn _show_divide(num: u32, den: u32) {
     match _divide(num, den) {
         Ok(value) => println!("{}/{} = {}", num, den, value),
-        Err(msg)  => println!("Cannot divide {} by {}: {}", num, den, msg),
+        Err(msg) => println!("Cannot divide {} by {}: {}", num, den, msg),
     }
 }

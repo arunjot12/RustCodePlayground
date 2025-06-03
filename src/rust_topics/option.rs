@@ -17,7 +17,7 @@ It has two variants:
 /// Prints each value until the vector is empty, then prints "#".
 fn _option() {
     let mut data = vec![1, 2, 3];
-    
+
     for _ in 0..5 {
         let item = data.pop();
         match item {

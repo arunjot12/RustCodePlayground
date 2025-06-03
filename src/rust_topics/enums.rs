@@ -39,8 +39,8 @@ fn _move_direction(dir: _Direction) {
     match dir {
         _Direction::North => println!("Moving north!"),
         _Direction::South => println!("Heading south!"),
-        _Direction::East  => println!("Going east!"),
-        _Direction::West  => println!("Turning west!"),
+        _Direction::East => println!("Going east!"),
+        _Direction::West => println!("Turning west!"),
     }
 }
 
