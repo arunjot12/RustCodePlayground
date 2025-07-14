@@ -1,2 +1,2 @@
-pub mod sync;
 pub mod asyncs;
+pub mod sync;

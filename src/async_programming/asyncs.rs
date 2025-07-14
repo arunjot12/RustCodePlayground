@@ -1,4 +1,4 @@
-use tokio::time::{Duration, sleep};
+use tokio::time::{sleep, Duration};
 
 async fn say_hello() {
     let message = message().await;

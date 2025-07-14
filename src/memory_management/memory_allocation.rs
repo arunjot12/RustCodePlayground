@@ -65,4 +65,3 @@ TL;DR:
 - Unicode (e.g., Devanagari, emojis): 2–4 bytes per character.
 - To get total memory: size_of::<String>() + s.capacity()
 */
-
