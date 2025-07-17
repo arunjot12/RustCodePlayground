@@ -19,6 +19,25 @@ impl ListNode {
         ListNode { val, next: None }
     }
 
+    fn convert(l1: Option<Box<ListNode>>, l2: Option<Box<ListNode>>)-> (Option<Box<ListNode>>,Option<Box<ListNode>>){
+        let mut string_l1 = String::new();
+        let mut string_l2 = String::new();
+
+        match (l1,l2) {
+            (Some(n1), Some(n2)) => {
+                string_l1.push_str(&n1.val.to_string());
+                string_l2.push_str(&n2.val.to_string());
+
+                Some(Box::new(ListNode{
+
+                }))
+
+            }
+          _ => None, 
+        }
+
+    }
+
     pub fn add_two_numbers(l1: Option<Box<ListNode>>, l2: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
         match (l1,l2){
               (Some(n1), Some(n2)) => {
