@@ -30,21 +30,21 @@ impl ListNode {
 
         let mut new = Vec::new();
         let mut current = l1.as_ref();
-        
 
         while let Some(node) = current {
             new.push(node.val);
             current = node.next.as_ref();
-         }
+        }
 
         let number_str: String = new.iter().map(|d| d.to_string()).collect();
         println!("Collected Number String: {}", number_str);
 
-        let convert_value :i32 = number_str.parse().unwrap();
+        let convert_value: i32 = number_str.parse().unwrap();
 
-         Some(Box::new(ListNode { val:convert_value , next: None }))
-
-      
+        Some(Box::new(ListNode {
+            val: convert_value,
+            next: None,
+        }))
     }
 
     pub fn add_two_numbers(
