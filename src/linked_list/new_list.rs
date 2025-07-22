@@ -4,13 +4,12 @@ pub fn new_list() {
     println!("Hello welcome to the new list");
 
     let new_list = ListNode::new(2).append(4).append(3);
-    // let second_list = ListNode::new(5).append(6).append(4);
-
-    // let third = ListNode::add_two_numbers(Some(Box::new(new_list)), Some(Box::new(second_list)));
-    // third.unwrap().print();
+    let second_list = ListNode::new(5).append(6).append(4);
 
     let convert_one = ListNode::convert(Some(Box::new(new_list)));
-    convert_one.unwrap().print();
+    let convert_second = ListNode::convert(Some(Box::new(second_list)));
+    let third = ListNode::add_two_numbers(convert_one, convert_second);
+    third.unwrap().print();
 }
 
 #[derive(Debug, Clone)]
@@ -29,29 +28,23 @@ impl ListNode {
         println!("Existing String {:?}", string_l1);
         println!("Panic Panic Panic Panic");
 
-        let a :Option<Box<ListNode>>=  match l1 {
-            (Some(ref n1)) => {
-                string_l1.push_str(&n1.val.to_string());
-                let value: i32 = string_l1.parse().unwrap();
+        let mut new = Vec::new();
+        let mut current = l1.as_ref();
+        
 
-                println!("Value is {}",value);
+        while let Some(node) = current {
+            new.push(node.val);
+            current = node.next.as_ref();
+         }
 
-                let convert_l1 = Some(Box::new(ListNode {
-                    val: value,
-                    next: Self::convert(n1.next.clone()),
-                }));
-                return convert_l1;
-            }
-            _ => None,
-        };
+        let number_str: String = new.iter().map(|d| d.to_string()).collect();
+        println!("Collected Number String: {}", number_str);
 
-      let b =   Some(Box::new(ListNode{
-            val:0,
-            next: None
-        }));
+        let convert_value :i32 = number_str.parse().unwrap();
 
-        println!("String after insertion is {:?}", string_l1);
-        b
+         Some(Box::new(ListNode { val:convert_value , next: None }))
+
+      
     }
 
     pub fn add_two_numbers(
