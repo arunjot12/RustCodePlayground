@@ -23,5 +23,5 @@ fn main() {
     new_list();
 
     Hashmaps::hashmap::hashmap();
-    Hashmaps::hashmap::hashmap_entry();
+    Hashmaps::hashmap::deference_array();
 }
