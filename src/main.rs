@@ -3,6 +3,8 @@ pub mod basic;
 pub mod linked_list;
 pub mod memory_management;
 pub mod rust_topics;
+#[allow(non_snake_case)]
+pub mod Hashmaps;
 pub use memory_management::*;
 pub mod async_programming;
 pub use crate::async_programming::*;
@@ -19,4 +21,7 @@ fn main() {
 
     #[cfg(feature = "linked-list")]
     new_list();
+
+    Hashmaps::hashmap::hashmap();
+    Hashmaps::hashmap::hashmap_entry();
 }
