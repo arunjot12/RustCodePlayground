@@ -1,5 +1,6 @@
 //! Core Rust language topics.
 
+pub mod closures;
 pub mod enums;
 pub mod error_handling;
 pub mod generics;

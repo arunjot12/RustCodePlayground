@@ -1,5 +1,5 @@
 pub fn lcm(){
-    let number = 15;
-    let number2 = 30;
+    let _number = 15;
+    let _number2 = 30;
     
 }

@@ -10,7 +10,7 @@ pub fn hashmap() {
 pub fn hashmap_entry() {
     let mut map = HashMap::new();
     map.insert(String::from("Arunjot"), String::from("clear"));
-    let check: &mut String = map.entry(String::from("Arunjot")).or_insert(String::from("Pass"));
+    let _check: &mut String = map.entry(String::from("Arunjot")).or_insert(String::from("Pass"));
     let value = map.get(&String::from("Arunjot"));
     println!("{:?}", value);
 }

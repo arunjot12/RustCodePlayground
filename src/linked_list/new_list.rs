@@ -1,5 +1,3 @@
-use std::convert;
-
 pub fn new_list() {
     println!("Hello welcome to the new list");
 
@@ -24,7 +22,7 @@ impl ListNode {
     }
 
     fn convert(l1: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
-        let mut string_l1 = String::new();
+        let string_l1 = String::new();
         println!("Existing String {:?}", string_l1);
         println!("Panic Panic Panic Panic");
 
