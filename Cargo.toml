@@ -15,16 +15,3 @@ rand = "0.8.5"
 tiny-keccak = "2.0.2"
 tokio = { version = "1.45", features = ["rt-multi-thread", "macros", "time"] }
 
-[features]
-rust_enum = []
-lcm = []
-reference = []
-zombie = []
-refernce = []
-swap_loop = []
-threads = []
-generics = []
-option = []
-memory-allocation = []
-async_programming= []
-linked-list = []

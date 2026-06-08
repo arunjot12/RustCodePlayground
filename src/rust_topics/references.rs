@@ -13,7 +13,6 @@ This helps with memory safety and performance without needing to clone data.
 
 /// This function is enabled with the "reference" feature flag.
 /// Demonstrates modifying elements of an array through a mutable reference.
-#[cfg(feature = "reference")]
 fn reference_array_example() {
     let mut arr = [1, -5, 12, -98];
     double_negative(&mut arr);
@@ -21,7 +20,7 @@ fn reference_array_example() {
 }
 
 /// Doubles each negative number in the array via a mutable reference.
-fn _double_negative(a: &mut [i16; 4]) {
+fn double_negative(a: &mut [i16; 4]) {
     for i in a {
         if *i < 0 {
             *i *= 2;

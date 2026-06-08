@@ -11,7 +11,6 @@ They are powerful and commonly used in pattern matching.
 // Example 1: Basic Enum with a Single Variant
 // -------------------------------------
 
-#[cfg(feature = "rust_enum")]
 pub fn rust_enum() {
     enum Office {
         Employee(String),

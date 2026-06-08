@@ -1,3 +1,5 @@
+//! Basic logic and mathematical algorithms.
+
 pub mod armstrong_number;
 pub mod calculator;
 pub mod factorial_number;
@@ -11,4 +13,4 @@ pub mod prime_number;
 pub mod reverse_integer;
 pub mod reverse_number;
 pub mod swap_two_numbers;
-// pub mod lcm;
+pub mod lcm;

@@ -3,7 +3,6 @@ use lazy_static::lazy_static;
 use std::{io, sync::RwLock};
 
 // Main function input
-// #[cfg(feature = "swap_loop")]
 // swap_loop();
 // // Loop to repeatedly swap numbers based on user input
 // loop {
@@ -45,7 +44,6 @@ pub fn swap() {
     println!("{}", first_number);
 }
 
-#[cfg(feature = "swap_loop")]
 /// Swap using the user input
 pub fn swap_numbers_using_input() {
     println!("Please choose if you want to input or want to Show the existing numbers ");

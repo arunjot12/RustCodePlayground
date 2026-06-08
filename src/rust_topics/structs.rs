@@ -14,7 +14,6 @@ This file includes examples of:
 // Example 1: Mutating Array via Reference
 // -------------------------------------
 
-#[cfg(feature = "reference")]
 fn reference_array_example() {
     let mut arr = [1, -5, 12, -98];
     double_negative(&mut arr);
@@ -22,7 +21,7 @@ fn reference_array_example() {
 }
 
 /// Doubles each negative number in the array using a mutable reference.
-fn _double_negative(a: &mut [i16; 4]) {
+fn double_negative(a: &mut [i16; 4]) {
     for i in a {
         if *i < 0 {
             *i *= 2;
