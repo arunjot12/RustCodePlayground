@@ -28,3 +28,13 @@ fn _mutable_borrow(){
     };
     push();
 }
+
+//  Ownership move through the closure
+
+fn ownership_moves(){
+    let data = vec![1,2,3];
+    let new_data = move || {
+         println!("{:?}", data);
+    };
+    // println!("{:?}", data);
+}
