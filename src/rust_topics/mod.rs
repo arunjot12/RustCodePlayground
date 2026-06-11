@@ -10,3 +10,4 @@ pub mod references;
 pub mod statics;
 pub mod structs;
 pub mod switch;
+pub mod smart_pointers;

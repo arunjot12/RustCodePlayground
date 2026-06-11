@@ -16,12 +16,12 @@ This file includes examples of:
 
 fn reference_array_example() {
     let mut arr = [1, -5, 12, -98];
-    double_negative(&mut arr);
+    _double_negative(&mut arr);
     println!("{:?}", arr); // Output: [1, -10, 12, -196]
 }
 
 /// Doubles each negative number in the array using a mutable reference.
-fn double_negative(a: &mut [i16; 4]) {
+fn _double_negative(a: &mut [i16; 4]) {
     for i in a {
         if *i < 0 {
             *i *= 2;

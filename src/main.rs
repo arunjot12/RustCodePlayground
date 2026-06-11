@@ -132,6 +132,7 @@ fn run_topics() {
         ("Structs", rust_topics::structs::reference),
         ("Generics", rust_topics::generics::use_of_generic),
         ("Option Unwrap", rust_topics::option::option_unwrap),
+        ("Smart Pointers", rust_topics::smart_pointers::use_smart_pointers),
     );
 }
 

@@ -33,8 +33,8 @@ fn _mutable_borrow(){
 
 fn ownership_moves(){
     let data = vec![1,2,3];
-    let new_data = move || {
-         println!("{:?}", data);
+    let _new_data = move || {
+        drop(data);
     };
-    // println!("{:?}", data);
+    // println!("{:?}", new_data);
 }
