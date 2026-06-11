@@ -2,8 +2,7 @@
 pub mod arrays;
 pub mod async_programming;
 pub mod basic;
-#[allow(non_snake_case)]
-pub mod Hashmaps;
+pub mod hashmaps;
 pub mod linked_list;
 pub mod memory_management;
 pub mod patterns;
@@ -33,7 +32,7 @@ macro_rules! run_menu {
             if choice == "0" {
                 break;
             }
-            
+
             let mut matched = false;
             let mut current = 1;
             $(
@@ -62,10 +61,19 @@ fn run_arrays() {
         ("Reverse Array", arrays::reverse_array::reverse),
         ("Reverse Array 2", arrays::reverse_array::reverse_array),
         ("Largest Array", arrays::largest_array::largest_number_array),
-        ("Removing Duplicasy", arrays::removing_duplicasy::removing_duplicasy),
+        (
+            "Removing Duplicasy",
+            arrays::removing_duplicasy::removing_duplicasy
+        ),
         ("Three D Arrays", arrays::three_d_arrays::three_d_arrays),
-        ("Largest String Array", arrays::largest_string_array::largest_array),
-        ("Largest String Array 2", arrays::largest_string_array::largest_string_array),
+        (
+            "Largest String Array",
+            arrays::largest_string_array::largest_array
+        ),
+        (
+            "Largest String Array 2",
+            arrays::largest_string_array::largest_string_array
+        ),
         ("Sum Array", arrays::sum_array::sum_of_array),
         ("Search Array", arrays::search_array::search_array),
     );
@@ -75,9 +83,18 @@ fn run_basic() {
     run_menu!(
         "Basic Programs",
         ("Swap Numbers", basic::swap_two_numbers::swap_numbers),
-        ("Swap Numbers Using Input", basic::swap_two_numbers::swap_numbers_using_input),
-        ("Multiplication Table", basic::multiplication_table::multiplication_table),
-        ("Armstrong Number", basic::armstrong_number::armstrong_number),
+        (
+            "Swap Numbers Using Input",
+            basic::swap_two_numbers::swap_numbers_using_input
+        ),
+        (
+            "Multiplication Table",
+            basic::multiplication_table::multiplication_table
+        ),
+        (
+            "Armstrong Number",
+            basic::armstrong_number::armstrong_number
+        ),
         ("Odd Number", basic::odd_number::odd_number),
         ("Calculator", basic::calculator::calculate),
         ("Reverse Integer", basic::reverse_integer::reverse_integer),
@@ -86,7 +103,10 @@ fn run_basic() {
         ("Leap Year", basic::leap_year::leap_year),
         ("LCM", basic::lcm::lcm),
         ("Palindrome", basic::palindrome_number::palindrome),
-        ("Palindrome Number", basic::palindrome_number::palindrome_number),
+        (
+            "Palindrome Number",
+            basic::palindrome_number::palindrome_number
+        ),
         ("Fibonacci", basic::fibonacci::fibonacci),
         ("Reverse Number", basic::reverse_number::reverse),
         ("Factorial", basic::factorial_number::factorial),
@@ -96,9 +116,9 @@ fn run_basic() {
 fn run_hashmaps() {
     run_menu!(
         "Hashmaps",
-        ("Hashmap", Hashmaps::hashmap::hashmap),
-        ("Hashmap Entry", Hashmaps::hashmap::hashmap_entry),
-        ("Dereference Array", Hashmaps::hashmap::deference_array),
+        ("Hashmap", hashmaps::hashmap::hashmap),
+        ("Hashmap Entry", hashmaps::hashmap::hashmap_entry),
+        ("Dereference Array", hashmaps::hashmap::deference_array),
     );
 }
 
@@ -108,9 +128,15 @@ fn run_patterns() {
         ("Simple Pyramid", patterns::simple_pyramid::simple_pyramid),
         ("Reverse Pyramid", patterns::simple_pyramid::reverse_pyramid),
         ("Square Pyramid", patterns::square_pyramid::square_pyramid),
-        ("Pyramid Numbers", patterns::pyramid_numbers::pyramid_numbers),
+        (
+            "Pyramid Numbers",
+            patterns::pyramid_numbers::pyramid_numbers
+        ),
         ("Full Pyramid", patterns::full_pyramid::full_pyramid),
-        ("Hollow Diamond", patterns::hollow_diamond_pyramid::hollow_diamond),
+        (
+            "Hollow Diamond",
+            patterns::hollow_diamond_pyramid::hollow_diamond
+        ),
         ("Hollow Pyramid", patterns::hollow_pyramid::hollow),
     );
 }
@@ -119,7 +145,10 @@ fn run_memory() {
     run_menu!(
         "Memory Management",
         ("Threads", memory_management::threads::thread),
-        ("Memory Allocation Size", memory_management::memory_allocation::size),
+        (
+            "Memory Allocation Size",
+            memory_management::memory_allocation::size
+        ),
     );
 }
 
@@ -132,15 +161,23 @@ fn run_topics() {
         ("Structs", rust_topics::structs::reference),
         ("Generics", rust_topics::generics::use_of_generic),
         ("Option Unwrap", rust_topics::option::option_unwrap),
-        ("Smart Pointers", rust_topics::smart_pointers::use_smart_pointers),
+        (
+            "Smart Pointers",
+            rust_topics::smart_pointers::use_smart_pointers
+        ),
+        ("Closures", rust_topics::closures::show_closures),
+        ("Statics", rust_topics::statics::show_statics),
+        ("Drop Trait", rust_topics::drop::show_drop),
+        (
+            "Error Handling",
+            rust_topics::error_handling::show_error_handling
+        ),
+        ("Match (Switch)", rust_topics::switch::show_switch),
     );
 }
 
 fn run_linked_list() {
-    run_menu!(
-        "Linked List",
-        ("New List", linked_list::new_list::new_list),
-    );
+    run_menu!("Linked List", ("New List", linked_list::new_list::new_list),);
 }
 
 fn run_async() {
@@ -151,10 +188,7 @@ fn run_async() {
 }
 
 fn run_libraries() {
-    run_menu!(
-        "Rust Libraries",
-        ("Cronjob", rust_libraries::cronjob::cron),
-    );
+    run_menu!("Rust Libraries", ("Cronjob", rust_libraries::cronjob::cron),);
 }
 
 fn main() {

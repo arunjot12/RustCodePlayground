@@ -1,21 +1,22 @@
-struct CustomData{
-    data : String
+struct CustomData {
+    data: String,
 }
 
-impl Drop for CustomData{
+impl Drop for CustomData {
     fn drop(&mut self) {
-        println!("Dropping  {}",self.data)
+        println!("Dropping  {}", self.data)
     }
 }
 
-fn main(){
-    let a = CustomData{
-        data: String::from("big boss")
+pub fn show_drop() {
+    println!("--- Drop Trait Demo ---");
+    let _a = CustomData {
+        data: String::from("First Instance"),
     };
 
-    let b = CustomData{
-        data : String::from("hhhhh")
+    let _b = CustomData {
+        data: String::from("Second Instance"),
     };
 
-    println!("Boom ")
+    println!("Variables created. About to end scope...");
 }

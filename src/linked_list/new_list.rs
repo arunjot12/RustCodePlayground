@@ -62,6 +62,7 @@ impl ListNode {
         }
     }
 
+    #[allow(dead_code)]
     fn remove(self, val: i32) -> Option<Box<ListNode>> {
         println!("self.val {}, val:  {}", self.val, val);
         if self.val == val {

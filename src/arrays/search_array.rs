@@ -13,7 +13,7 @@ pub fn search_array() {
     let index: u32 = index.trim().parse().expect("not a number");
 
     for i in arr {
-        if i == index  {
+        if i == index {
             print!("The number of index {:?}", arr[index as usize]);
         }
     }

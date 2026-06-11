@@ -1,40 +1,37 @@
-fn _closure() {
+pub fn show_closures() {
+    println!("--- Closures Demo ---");
+    basic_closure();
+    immutable_borrow();
+    mutable_borrow();
+    ownership_moves();
+}
+
+fn basic_closure() {
     let a = 10;
-    let b = |n| n + a ;
-    println!(" The b is {:?}",b(10));
+    let b = |n| n + a;
+    println!("Basic closure capturing 'a': {:?}", b(10));
 }
 
-// Because a  function can't do this
-
-// fn add(n:i32) -> i32{
-//     n + x
-// }
-
-// Immutable borrow 
-
-fn _immutable_borrow(){
-    let data = vec![1,2,3];
-    let print = || println!("{:?}",data);
+fn immutable_borrow() {
+    let data = vec![1, 2, 3];
+    let print = || println!("Immutable borrow of data: {:?}", data);
     print();
-    // This means we have reference this using Fn methods of the closure
 }
 
-//   Mutable borrow through the closure 
-
-fn _mutable_borrow(){
-    let mut data = vec![1,2,3];
+fn mutable_borrow() {
+    let mut data = vec![1, 2, 3];
     let mut push = || {
         data.push(9);
     };
     push();
+    println!("Mutable borrow after push: {:?}", data);
 }
 
-//  Ownership move through the closure
-
-fn ownership_moves(){
-    let data = vec![1,2,3];
-    let _new_data = move || {
+fn ownership_moves() {
+    let data = vec![1, 2, 3];
+    let new_data = move || {
+        println!("Ownership moved into closure, dropping data: {:?}", data);
         drop(data);
     };
-    // println!("{:?}", new_data);
+    new_data();
 }

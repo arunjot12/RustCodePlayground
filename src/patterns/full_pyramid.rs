@@ -16,24 +16,22 @@ pub fn full_pyramid() {
 }
 
 pub fn reverse_pyramid() {
-  for i in 1..5 {
+    for i in 1..5 {
         for _ in 1..=(5 - i) {
             print!(" ");
         }
-        for _ in 1..(2 *i) {
+        for _ in 1..(2 * i) {
             print!("*");
         }
         println!()
-    };
+    }
     for i in (1..5).rev() {
         for _ in 1..=(5 - i) {
             print!(" ");
         }
-        for _ in 1..(2 *i) {
+        for _ in 1..(2 * i) {
             print!("*");
         }
         println!()
-    };
-    
-
+    }
 }

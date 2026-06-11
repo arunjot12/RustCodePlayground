@@ -7,6 +7,7 @@
 
 // Return addresses for function calls (call frames)
 
+#[allow(dead_code)]
 fn stack() {
     let _x = 42; // stored on the stack
 }

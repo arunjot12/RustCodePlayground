@@ -14,6 +14,7 @@ This file includes examples of:
 // Example 1: Mutating Array via Reference
 // -------------------------------------
 
+#[allow(dead_code)]
 fn reference_array_example() {
     let mut arr = [1, -5, 12, -98];
     _double_negative(&mut arr);

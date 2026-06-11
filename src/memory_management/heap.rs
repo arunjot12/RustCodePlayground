@@ -1,3 +1,4 @@
+#[allow(dead_code)]
 fn heap() {
     std::thread::spawn(|| {
         // This is a new thread.
