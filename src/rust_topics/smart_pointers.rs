@@ -17,7 +17,7 @@ impl<T> MyBox<T> {
 }
 
 pub fn use_smart_pointers() {
-    let a = MyBox::new(String::new());
+    let _a = MyBox::new(String::new());
     let b = MyBox::new(50);
-    let c = *b;
+    let _c = *b;
 }
