@@ -10,5 +10,6 @@ pub mod option;
 pub mod references;
 pub mod smart_pointers;
 pub mod statics;
+pub mod borrow_mut;
 pub mod structs;
 pub mod switch;
